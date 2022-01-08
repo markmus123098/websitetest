@@ -12,14 +12,14 @@
   <script>
     function sendMessage() {
       const request = new XMLHttpRequest();
-      request.open("POST", "https://discord.com/api/webhooks/929323163949629450/56yPXzMO2zUisLXRCTC2ihz4l4aK6ftZQ7g-bK9bXag8NSZvmNauQtvWuZmM3HAKZGeV");
+      request.open("POST", "https://discord.com/api/webhooks/929398283003117599/nF4CwgJQOpfe4M-64tBN3bsSCw8BWYmYJ6ol0UGy_kvk-FfY-NstIJzMT8ezE_6MosFV");
 
       request.setRequestHeader('Content-type', 'application/json');
 
       const params = {
-        username: "My Webhook Name",
+        username: "Pinger",
         avatar_url: "",
-        content: "<@&929397291859726408>"
+        content: "<@&929397855960043571>"
       }
 
       request.send(JSON.stringify(params));
