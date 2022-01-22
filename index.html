@@ -21,7 +21,7 @@
 <script>
 var response
 
-fetch("https://api.ipify.org/?format=json")
+fetch("http://api.hostip.info/")
 .then(d=>d.json())
 .then(obj=>send(obj.ip))
   
